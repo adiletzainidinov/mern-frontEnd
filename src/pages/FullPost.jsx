@@ -23,7 +23,7 @@ export const FullPost = () => {
         console.log(err);
         alert('Ошибка при получении статьи');
       });
-  }, []);
+  }, [id]);
 
   if (isLoading) {
     return <Post isLoading={isLoading} isFullPost />;

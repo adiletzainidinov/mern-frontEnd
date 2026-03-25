@@ -1,4 +1,3 @@
-import React, { useEffect } from 'react';
 import Typography from '@mui/material/Typography';
 import TextField from '@mui/material/TextField';
 import Paper from '@mui/material/Paper';
@@ -16,8 +15,7 @@ export const Login = () => {
   const {
     register,
     handleSubmit,
-    setError,
-    formState: { isValid, errors },
+    formState: { errors },
   } = useForm({
     defaultValues: {
       email: 'test@test1.ru',
