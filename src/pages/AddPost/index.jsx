@@ -25,6 +25,8 @@ export const AddPost = () => {
 
   const isEditing = Boolean(id);
 
+  console.log(isLoading);
+
   const handleChangeFile = async (event) => {
     try {
       const formData = new FormData();
@@ -132,7 +134,7 @@ export const AddPost = () => {
           </Button>
           <img
             className={styles.image}
-            src={`http://localhost:4444${imageUrl}`}
+            src={`proccess.env.REACT_APP_API_URL${imageUrl}`}
             alt="Uploaded"
           />
         </>

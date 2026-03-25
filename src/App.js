@@ -10,6 +10,7 @@ import { fetchAuthMe, selectIsAuth } from './redux/slices/auth';
 function App() {
   const dispatch = useDispatch();
   const isAuth = useSelector(selectIsAuth);
+  console.log(isAuth);
 
   useEffect(() => {
     const token = window.localStorage.getItem('token');
