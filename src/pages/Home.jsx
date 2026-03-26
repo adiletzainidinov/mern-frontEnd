@@ -44,7 +44,7 @@ export const Home = () => {
                 title={obj.title}
                 imageUrl={
                   obj.imageUrl
-                    ? `proccess.env.REACT_APP_API_URL${obj.imageUrl}`
+                    ? `${process.env.REACT_APP_API_URL}${obj.imageUrl}`
                     : ''
                 }
                 user={obj.user}
